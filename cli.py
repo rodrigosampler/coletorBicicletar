@@ -29,7 +29,7 @@ if __name__ == "__main__":
             with open(nome_arquivo, "a") as csvfile:
                 try:
                     spamwriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-                    spamwriter.writerow([data, _id, _nome, _lat, _long, _linha, _endereco, _statusOnline, _StatusOperacional, _internalStatus, _disp1, _disp2, _total])
+                    spamwriter.writerow([data, _id, _nome.encode('utf8'), _lat, _long, _linha.encode('utf8'), _endereco.encode('utf8'), _statusOnline, _StatusOperacional, _internalStatus, _disp1, _disp2, _total])
                 finally:
                     csvfile.close()
         print("proximo")
