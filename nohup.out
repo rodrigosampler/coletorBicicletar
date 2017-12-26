@@ -1,0 +1,5 @@
+PROJETO BICICLETAR - FORTALEZA/BR
+Traceback (most recent call last):
+  File "cli.py", line 29, in <module>
+    time.sleep(60)
+KeyboardInterrupt
